@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body style="background: #1a1a1c;">
+    <!-- Navbar starts here -->
+    <nav class=" border-gray-200 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center md:justify-center justify-end mx-auto p-4">
+            <div class="flex md:order-2">
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto z-10 md:order-1" id="navbar-cta">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:flex-row  md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="/index.html" class="block py-2 pl-3 pr-4 text-white" aria-current="page">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/faq.html" class="block py-2 pl-3 pr-4 text-gray-100 ">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-100">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/application.html" class="block py-2 pl-3 pr-4 text-gray-100">Application form</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-100">Farmer Profile</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-100">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ends here -->
+    <!-- navbar ends here -->
+    <div class="lg:mx-[8rem] mx-[2rem]">
+        <div class=" flex md:flex-row flex-col gap-4">
+            <div class=" md:w-1/3 w-full">
+                <p class="text-start text-base text-gray-400">Please read through our <a href=""
+                        class="text-base text-blue-500  hover:underline">Frequently Asked Questions</a> before starting
+                    to complete the application form.</p>
+
+            </div>
+            <div class="md:w-2/3 w-full bg-white text-gray-900 py-4 px-2">
+                <h1 class="text-center text-6xl text-green-700 font-medium">Farm Recruit USA</h1>
+                <h2 class="text-center text-2xl">Taking the guess work out of recruitment</h2>
+                <h3 class="text-xl text-start font-bold mt-6">Application for US Agricultural Work</h3>
+                <p class=" text-start text-sm">Please complete all the information as thoroughly as possible in
+                    English. Also ensure that all the information supplied is correct as this will be used for the
+                    US State documentation once your employment has been confirmed.</p>
+                <!-- stepper -->
+
+                <ol class="items-center w-full space-y-4 sm:flex sm:space-x-6 sm:space-y-0 flex-wrap my-4">
+                    <li class="flex items-center text-blue-600 dark:text-blue-500 space-x-2" step="1">
+                        <span
+                            class="flex items-center justify-center w-4 h-4 border border-blue-600 rounded-full shrink-0 dark:border-blue-500 text-[0.6rem]">
+                            1
+                        </span>
+                        <span>
+                            <p class="text-sm">Citizenship Confirmation</p>
+                        </span>
+                    </li>
+                    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2" step="2">
+                        <span
+                            class="flex items-center justify-center w-4 h-4 border border-gray-500 rounded-full shrink-0 dark:border-gray-400 text-[0.6rem]">
+                            2
+                        </span>
+                        <span>
+
+                            <p class="text-sm">Personal Information</p>
+                        </span>
+                    </li>
+                    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2" step="3">
+                        <span
+                            class="flex items-center justify-center w-4 h-4 border border-gray-500 rounded-full shrink-0 dark:border-gray-400 text-[0.6rem]">
+                            3
+                        </span>
+                        <span>
+
+                            <p class="text-sm">Employment & Education</p>
+                        </span>
+                    </li>
+                    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2" step="4">
+                        <span
+                            class="flex items-center justify-center w-4 h-4 border border-gray-500 rounded-full shrink-0 dark:border-gray-400 text-[0.6rem]">
+                            4
+                        </span>
+                        <span>
+
+                            <p class="text-sm">Farming & Mechanical Experience</p>
+                        </span>
+                    </li>
+                    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2 " step="5">
+                        <span
+                            class="flex items-center justify-center w-4 h-4 border border-gray-500 rounded-full shrink-0 dark:border-gray-400 text-[0.6rem]">
+                            5
+                        </span>
+                        <span>
+
+                            <p class="text-sm">Skills Analysis</p>
+                        </span>
+                    </li>
+                    <li class="flex items-center text-gray-500 dark:text-gray-400 space-x-2" step="6">
+                        <span
+                            class="flex items-center justify-center w-4 h-4 border border-gray-500 rounded-full shrink-0 dark:border-gray-400 text-[0.6rem]">
+                            6
+                        </span>
+                        <span>
+
+                            <p class="text-sm">Declaration of Information</p>
+                        </span>
+                    </li>
+                </ol>
+                <!--  stepper ends here -->
+                <form action="" class=" ">
+                    <!--  step 1   ===== Citizenship Confirmation== -->
+                    <section id="step-1" class="hidden">
+
+                        <p class="font-medium text-sm italic my-6">By continuing & submitting your application, you
+                            consent
+                            to any personal information contained within your application being processed for
+                            recruitment
+                            purposes.</p>
+                        <p class="font-medium text-sm italic my-6">Your personal information will not be shared with any
+                            third-party, unrelated to the recruitment process, without explicit consent from the
+                            applicant,
+                            and that all personal information belonging to unsuccessful applicants will be deleted from
+                            any
+                            records in compliance with the POPI Act.
+                        </p>
+                        <div class=" flex md:flex-row flex-col gap-4 py-10  border-t-2 border-gray-200">
+                            <div class=" md:w-1/2 w-full">
+                                <h3 class=" text-sm font-medium">Are you a South African citizen?</h3>
+
+                                <div class=" flex justify-start items-center gap-4 my-4">
+                                    <div class="flex items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 ">
+                                        <label for="default-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2">
+                                        <label for="default-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class=" md:w-1/2 w-full">
+                                <h3 class=" text-sm font-medium">Are CURRENTLY residing within South Africa's borders?
+                                </h3>
+                                <div class=" flex justify-start items-center gap-4 my-4">
+                                    <div class="flex items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 ">
+                                        <label for="default-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2">
+                                        <label for="default-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <button type="button" class=" bg-blue-700 text-white text-base py-1 px-6 rounded-md"
+                                step_number="2">Next</button>
+                            <button type="button"
+                                class=" bg-transparent text-blue-700 border border-blue-700 py-1 px-6 rounded-md">Save</button>
+                        </div>
+                    </section>
+                    <!--  step 2 -->
+                    <section id="step-2">
+                        <h1 class=" text-start font-medium text-lg">Personal Information</h1>
+                        <h2 class=" font-medium text-start text-base mt-4">Full Name(s) & Surname: <span
+                                class=" text-red-600">*</span></h2>
+                        <div class="flex md:flex-row flex-col items-center gap-2 w-full">
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="First">
+                            </div>
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="Middle">
+                            </div>
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Last">
+                            </div>
+                        </div>
+                        <p class=" text-xs font-medium italic">Please complete your names exactly as shown in your
+                            passport / ID <br>
+                            Your first & middle names are the names you were given at birth. Your last name or family
+                            name is your surname.</p>
+                        <!-- Dummy form Image-->
+                        <div class=" mx-4 my-4">
+                            <img src="/img/NamesExamples.JPG" alt="" class=" object-contain w-full">
+                        </div>
+                        <div class=" flex md:flex-row flex-col gap-8 justify-between w-full">
+                            <div class="md:w-1/2 w-full">
+                                <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">Name you
+                                    would like to be called:<span class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="flex items-start md:w-1/2 w-full">
+                                <input id="default-checkbox" type="checkbox" value=""
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 mt-2">
+                                <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 ">I hereby
+                                    confirm that I have checked that my full names & surname have been entered correctly
+                                    & exactly as in my ID / passport.</label>
+                            </div>
+
+                        </div>
+                        <h2 class=" font-medium text-start text-lg mt-6">Address<span class="text-red-600">*</span></h2>
+                        <input type="text" id="small-input"
+                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                            placeholder="Address Line 1">
+                        <input type="text" id="small-input"
+                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                            placeholder="Address Line 2">
+                        <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-2">
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="City">
+                            </div>
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="State/Province/Region">
+                            </div>
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Postal/Zip code">
+                            </div>
+                        </div>
+                        <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2">
+                            <option selected>Choose a country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+
+                        <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-4">
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">Primary
+                                    Phone No.<span class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="City">
+                            </div>
+                            <div class=" w-full">
+                                <label for="small-input"
+                                    class="block mb-2 text-lg font-medium text-gray-900">Alternative Phone No:<span
+                                        class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="State/Province/Region">
+                            </div>
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">WhatsApp
+                                    No.<span class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Postal/Zip code">
+                            </div>
+                        </div>
+                        <p class=" text-sm font-light  text-end pt-3">Please add your current WhatsApp number <br> IF
+                            different from your primary number.</p>
+                        <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-4">
+                            <div class=" w-full">
+                                <label for="small-input"
+                                    class="block mb-2 text-lg font-medium text-gray-900">Email.<span
+                                        class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="City">
+                                <p class=" text-sm font-light  pt-1">This email will be used in future for all
+                                    communications</p>
+                            </div>
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">Confirm
+                                    Email:<span class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="State/Province/Region">
+                                <p class=" text-sm font-light pt-1">This email will be used in future for all
+                                    communications</p>
+                            </div>
+                        </div>
+                        <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-4">
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">Birth
+                                    Date:<span class=" text-red-600">*</span> </label>
+                                <div class="relative max-w-sm">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                        </svg>
+                                    </div>
+                                    <input datepicker type="text"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                                        placeholder="Select date">
+                                </div>
+
+                            </div>
+                            <div class=" w-full flex flex-col justify-center items-center">
+                                <label for="" class="block  text-lg font-medium text-gray-900">Sex </label>
+                                <div class=" flex justify-start items-center gap-4">
+                                    <div class="flex items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                        <label for="default-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Male</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                        <label for="default-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">SA ID
+                                    Number::<span class=" text-red-600">*</span> </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="State/Province/Region">
+
+                            </div>
+                        </div>
+                        <div class=" w-full mt-4">
+                            <label for="small-input" class="block mb-2 text-lg font-medium text-gray-900">Place of
+                                Birth:<span class=" text-red-600">*</span> </label>
+                            <input type="text" id="small-input"
+                                class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                placeholder="State/Province/Region">
+                            <p class="text-xs font-light pt-1">Please enter the TOWN where you were born, NOT the
+                                country of birth.</p>
+                        </div>
+                        <div class="flex md:flex-row flex-col gap-4 mt-4">
+                            <div class="w-full">
+                                <label for="small-input" class="block text-lg font-medium text-gray-900">Photo:<span
+                                        class=" text-red-600">*</span> </label>
+                                <div class="flex items-center justify-center w-full">
+                                    <label for="dropzone-file"
+                                        class="flex  w-full border rounded-md cursor-pointer bg-gray-50 px-2 py-4">
+                                        <div class="flex flex-col items-center ">
+                                            <p class="text-sm text-gray-500 text-start"><span
+                                                    class="font-semibold bg-blue-600 text-white px-1 py-1 rounded-sm">Upload</span>
+                                                or drag and drop</p>
+                                        </div>
+                                        <input id="dropzone-file" type="file" class="hidden" />
+                                    </label>
+                                </div>
+                                <p class="text-xs font-light pt-1">Please upload a photo of yourself. Max file size:
+                                    25MB</p>
+                                <p class="text-xs font-light mt-3">Ensure that your photo complies with our <a
+                                        href="/faq/#application"
+                                        class=" text-blue-600 underline font-medium">requirements.</a> We have an added
+                                    example to make selecting the correct photo easier.
+                                    Incorrect / inappropriate photos will not be accepted & your application will not be
+                                    sent out.</p>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-xs font-light pt-1">Example of an acceptable photo:</p>
+                                <img src="/img/PhotoExample.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="flex md:flex-row flex-col gap-4 mt-6">
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2  text-sm font-medium text-gray-900">Marital
+                                    status:<span class=" text-red-600">*</span> </label>
+                                <select id="countries"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 mt-2">
+                                    <option selected value="single">Single</option>
+                                    <option value="US">Married</option>
+                                    <option value="CA">Divorsed</option>
+                                    <option value="FR">Widowed</option>
+                                </select>
+                            </div>
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2 text-sm font-medium text-gray-900">Number of
+                                    Dependants </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="">
+                            </div>
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Do you have a valid SA
+                                    Passport?</label>
+                                <div class=" flex justify-start items-center gap-4">
+                                    <div class="flex items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                        <label for="default-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                        <label for="default-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex md:flex-row flex-col gap-4 mt-6">
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Have you already applied
+                                    for a new passport?
+                                </label>
+                                <div class=" flex justify-start items-center gap-4">
+                                    <div class="flex items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                        <label for="default-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                        <label for="default-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class=" w-full">
+                                <label for="small-input" class="block mb-2  text-sm font-medium text-gray-900">Which is
+                                    your preferred/​closest airport to depart from?:<span class=" text-red-600">*</span>
+                                </label>
+                                <select id="countries"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 mt-2">
+                                    <option selected>Select from dropdown</option>
+                                    <option value="">Johannesburg - OR Tambo international airpot</option>
+                                    <option value="">Cape Town international airport</option>
+                                    <option value="">Upington</option>
+                                    <option value="">Kimberley</option>
+                                    <option value="">Bloemfontein</option>
+
+                                </select>
+                            </div>
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Have you already applied
+                                    for a new passport?
+                                </label>
+                                <div class=" flex justify-start items-center gap-4">
+                                    <div class="flex items-center">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                        <label for="default-radio-1"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                        <label for="default-radio-2"
+                                            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======================== Legal Guardian======================== -->
+                        <h1 class=" font-medium text-xl text-start mt-6">Legal Guardian</h1>
+                        <p class="text-xs font-light">If the applicant is <span class="font-medium">under the age of
+                                21</span> the following details are required:</p>
+                        <div class="flex md:flex-row flex-col items-center gap-4 w-full mt-5">
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Name of Legal Guardian:
+                                </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="">
+                            </div>
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Relationship to
+                                    Applicant:
+                                </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="">
+                            </div>
+                        </div>
+                        <div class="flex md:flex-row flex-col items-center gap-4 w-full mt-4">
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Phone
+                                </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="">
+                            </div>
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Email
+                                </label>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="Middle">
+                            </div>
+                        </div>
+                        <h2 class=" font-medium text-start text-sm mt-6">Address<span class="text-red-600">*</span></h2>
+                        <input type="text" id="small-input"
+                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                            placeholder="Address Line 1">
+                        <input type="text" id="small-input"
+                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                            placeholder="Address Line 2">
+                        <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-2">
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="City">
+                            </div>
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                    placeholder="State/Province/Region">
+                            </div>
+                            <div class=" w-full">
+
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Postal/Zip code">
+                            </div>
+                            <div class=" w-full">
+
+                                <select id="countries"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
+                                    <option selected>Choose a country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- ===================  Emergency Contacts =================== -->
+                        <h1 class=" font-medium text-xl text-start mt-6">Emergency Contacts</h1>
+                        <p class="text-xs font-light">Please list two different contacts - Other than spouse and/or
+                            legal guardian, if applicable</p>
+                        <div class=" flex md:flex-row flex-col gap-6">
+                            <div class=" md:w-1/2 w-full">
+                                <div class="flex md:flex-row flex-col items-center gap-4 w-full mt-4">
+                                    <div class=" w-full">
+                                        <label for="" class="block  text-sm font-medium text-gray-900">Name <span
+                                                class=" text-red-600">*</span>
+                                        </label>
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="First">
+                                    </div>
+                                    <div class=" w-full">
+                                        <label for="" class=" invisible text-sm font-medium text-gray-900">Name
+                                        </label>
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                            placeholder="Last">
+                                    </div>
+                                </div>
+                                <div class=" w-full mt-4">
+                                    <label for="" class="block  text-sm font-medium text-gray-900">Relationship to
+                                        Applicant: <span class=" text-red-600">*</span>
+                                    </label>
+                                    <input type="text" id="small-input"
+                                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Mother">
+                                </div>
+                                <h2 class=" font-medium text-start text-sm mt-6">Address<span
+                                        class="text-red-600">*</span></h2>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                                    placeholder="Address Line 1">
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                                    placeholder="Address Line 2">
+                                <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-2">
+                                    <div class=" w-full">
+
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="City">
+                                    </div>
+                                    <div class=" w-full">
+
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                            placeholder="State/Province/Region">
+                                    </div>
+                                </div>
+                                <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-2">
+                                    <div class=" w-full">
+
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="Postal/Zip code">
+                                    </div>
+                                    <div class=" w-full">
+
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
+                                            <option selected>Choose a country</option>
+                                            <option value="US">United States</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="FR">France</option>
+                                            <option value="DE">Germany</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class=" w-full mt-4">
+                                    <label for="" class="block  text-sm font-medium text-gray-900">Phone: <span
+                                            class=" text-red-600">*</span>
+                                    </label>
+                                    <input type="text" id="small-input"
+                                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="">
+                                </div>
+                                <div class=" w-full mt-4">
+                                    <label for="" class="block  text-sm font-medium text-gray-900">Email: <span
+                                            class=" text-red-600">*</span>
+                                    </label>
+                                    <input type="text" id="small-input"
+                                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class=" md:w-1/2 w-full">
+                                <div class="flex md:flex-row flex-col items-center gap-4 w-full mt-4">
+                                    <div class=" w-full">
+                                        <label for="" class="block  text-sm font-medium text-gray-900">Name <span
+                                                class=" text-red-600">*</span>
+                                        </label>
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="First">
+                                    </div>
+                                    <div class=" w-full">
+                                        <label for="" class=" invisible text-sm font-medium text-gray-900">Name
+                                        </label>
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                            placeholder="Last">
+                                    </div>
+                                </div>
+                                <div class=" w-full mt-4">
+                                    <label for="" class="block  text-sm font-medium text-gray-900">Relationship to
+                                        Applicant: <span class=" text-red-600">*</span>
+                                    </label>
+                                    <input type="text" id="small-input"
+                                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Mother">
+                                </div>
+                                <h2 class=" font-medium text-start text-sm mt-6">Address<span
+                                        class="text-red-600">*</span></h2>
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                                    placeholder="Address Line 1">
+                                <input type="text" id="small-input"
+                                    class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 mt-2"
+                                    placeholder="Address Line 2">
+                                <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-2">
+                                    <div class=" w-full">
+
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="City">
+                                    </div>
+                                    <div class=" w-full">
+
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+                                            placeholder="State/Province/Region">
+                                    </div>
+                                </div>
+                                <div class="flex md:flex-row flex-col items-center gap-2 w-full mt-2">
+                                    <div class=" w-full">
+
+                                        <input type="text" id="small-input"
+                                            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                            placeholder="Postal/Zip code">
+                                    </div>
+                                    <div class=" w-full">
+
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
+                                            <option selected>Choose a country</option>
+                                            <option value="US">United States</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="FR">France</option>
+                                            <option value="DE">Germany</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class=" w-full mt-4">
+                                    <label for="" class="block  text-sm font-medium text-gray-900">Phone: <span
+                                            class=" text-red-600">*</span>
+                                    </label>
+                                    <input type="text" id="small-input"
+                                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="">
+                                </div>
+                                <div class=" w-full mt-4">
+                                    <label for="" class="block  text-sm font-medium text-gray-900">Email: <span
+                                            class=" text-red-600">*</span>
+                                    </label>
+                                    <input type="text" id="small-input"
+                                        class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex md:flex-row flex-col gap-4 mt-8">
+                            <div class=" w-full">
+                                <label for="" class="block  text-sm font-medium text-gray-900">Which current, valid SA driving licence do you have? <span
+                                    class=" text-red-600">*</span>
+                            </label>
+                                <select id="countries"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
+                                <option selected value="">A - Motorcycle > 125CC</option>
+                                <option value="">B - Light Motor Vehicle</option>
+                                <option value="">C1 - Non-articulated heavy vehicle</option>
+                                <option value="">C - Non-articulated extra-heavy vehicle</option>
+                                <option value="">EB</option>
+                                <option value="">ECI</option>
+                                <option value="">EC</option>
+                                <option value="">None</option>
+
+                            </select>
+                            <p class=" text-xs text-start italic mt-1">A: Motorcycles with an engine capacity greater than 125 cc B: Vehicles with a tare weight of 3 500 kilograms or less. A trailer with GVM of 750 kg or less may be attached. C1: Vehicles with tare weight between 3 500 kg and 16 000 kg with or without a trailer of up to 750 kg. C: Buses and goods vehicles with GVM greater than 16 000 kg with or without a trailer of up to 750 kg. EB: Light articulated vehicles of 3 500 kg or less and vehicles allowed by Code B but with a trailer with GVM greater than 750 kg. EC1: Rigid vehicles with GCM between 3 500 kg and 16 000 kg including vehicles allowed by Code C1 but with a trailer with GVM greater than 750 kg. EC: Rigid vehicles with GCM greater than 16 000 kg; and vehicles allowed by Code C but with a trailer with GVM greater than 750 kg.</p>
+                        </div>
+                        <div class=" w-full">
+                            <label for="" class="block  text-sm font-medium text-gray-900">SA Driver's License Expiry Date: <span
+                                class=" text-red-600">*</span>
+                        </label>
+                        
+                            <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </div>
+                                <input datepicker type="text"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                                    placeholder="Select date">
+                            </div>
+
+                      
+                        </div>
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Have you ever worked in the USA before?
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">In the last 10 years, have you been convicted of driving under the influence?
+
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Do you have any other criminal offences OR misdemeanors, that might affect your visa eligibility?
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                            <p class=" text-xs font-light italic mt-1">Any previous DUI/DWI, court orders, outstanding fines etc. <br> This applies to any law enforcement branch in South Africa as well as the USA.</p>
+                        </div>
+
+                        <!-- ===========================  Health Condition ===================== -->
+                        <h1 class=" font-medium text-xl text-start mt-6">Health Condition</h1>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Allergies:
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Disabilities
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                            <p class=" text-xs font-light italic mt-1">A physical or mental condition that limits a person's movements, senses or activities.</p>
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Serious Health Issues:
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Chronic Medication:
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                        
+                        </div>
+                        <div class=" w-full mt-6">
+                            <label for="" class="block  text-sm font-medium text-gray-900">Any Assistive Technology:
+                            </label>
+                            <div class=" flex justify-start items-center gap-4">
+                                <div class="flex items-center">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
+                                    <label for="default-radio-1"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500  focus:ring-2">
+                                    <label for="default-radio-2"
+                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                                </div>
+
+
+                            </div>
+                            <p class=" text-xs font-light italic mt-1">Any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of person. (E.G: corrective and/or contact lenses, hearing aids, pacemakers etc.)</p>
+                        </div>
+                    </section>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../path/to/flowbite/dist/datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</body>
+
+</html>
